@@ -5,7 +5,7 @@ import "./App.css";
 import SmurfForm from "./components/SmurfForm";
 import Smurfs from "./components/Smurfs";
 
-import { Route, Link, NavLink } from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -58,10 +58,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="navBar">
-          <NavLink exact to="/" className="activeNav">
+          <NavLink exact to="/" className="nav-link">
             Smurfs
           </NavLink>
-          <NavLink to="/smurf-form" className="activeNav">
+          <NavLink to="/smurf-form" className="nav-link">
             Smurf Form
           </NavLink>
         </div>
