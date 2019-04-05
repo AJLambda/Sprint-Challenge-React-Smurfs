@@ -28,9 +28,35 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the differences between `client-side routing` and `server-side routing`.
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
-- [ ] Mention three tools we can use to make AJAX requests.
+- [x] Explain the differences between `client-side routing` and `server-side routing`.
+
+  Server-Side Routing:
+
+  When we request information from a server, (i.e. a user clicks on a link) and that server then sends back that document that was requested, this is Server-side routing. The server will then REFRESH the web page that we’re looking at, because a new request was made for information and the information given was a bunch of DOM elements, we have to re-paint the web page.
+
+  Client-Side Routing:
+
+  When Routing is handled internally by the JavaScript that is already on the page we achieve what is known as Client-side routing. This is a modern routing style, a tool we use to get things done today. The page will not refresh. This works because the client doesn't ask for it's resource from the server via URL, instead, Javascript gives us the resource (state) that is rendered with react.
+
+- [x] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+
+  HTTP is a network protocol, a set of rules that govern the way web clients, like a browser, communicate with web servers over the internet. CRUD stands for Create, Read, Update and delete, HTTP performs these operations on server resources.
+
+  A POST request is used to ask the server to add or create new resources, POST is the "C".
+
+  The method GET is how we ask for information from a server that we can read, GET is the "R".
+
+  The method used by the client to ask the server to make changes to specific resources is PUT, PUT is the "U".
+
+  To remove or delete data from the server the client needs to send a DELETE request, DELETE is the "D".
+
+- [x] Mention three tools we can use to make AJAX requests.
+
+  Fetch. We can use JavaScript's method fetch and chain .then() and .catch() off it to handle the data that gets returned from the server we sent our request to.
+
+  Axios. We can use the axios package as a dependency, using axios calls
+
+  JQuery. We can use JQuery's Ajax library.
 
 ## Project Set Up
 
