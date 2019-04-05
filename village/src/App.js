@@ -57,14 +57,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="navBar">
+        <nav class="nav">
           <NavLink exact to="/" className="nav-link">
             Smurfs
           </NavLink>
           <NavLink to="/smurf-form" className="nav-link">
             Smurf Form
           </NavLink>
-        </div>
+        </nav>
 
         <Route
           exact
